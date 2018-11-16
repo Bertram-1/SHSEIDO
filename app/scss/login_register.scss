@@ -1,0 +1,201 @@
+@import "component/reset.scss";
+@import "component/header.scss";
+@import "component/nav.scss";
+@import "component/footer.scss";
+@import "component/scrollbox.scss";
+
+input{
+	border:none;
+	border:1px solid #cdcdcd;
+}
+.offi_top{
+	width: 980px;
+	height: 196px;
+	margin: 0 auto;
+	margin-top: 23px;
+	margin-bottom: 57px;
+	li{
+		float: left;
+		margin-right: 10px;
+		img{
+			width: 188px;
+			height: 196px;
+		}
+	}
+
+}
+.login_register{
+	width: 980px;
+	height: 605px;
+	margin:0 auto;
+	.login{
+		width: 423px;
+		height: 293px;
+		border: 1px solid #cdcdcd;
+		float:left;
+		.phone_email{
+			width: 169px;
+			height: 24px;
+			display: block;
+			margin-left: 127px;
+		}
+		.password{
+			width: 169px;
+			height: 24px;
+			display: block;
+			margin-left: 127px;
+			margin-top:10px;
+		}
+		.wj{
+			display:block;
+			font-size:12px;
+			margin-left:127px;
+			margin-top:15px;
+			margin-bottom:32px;
+			color: black;
+		}
+		.checkbox{
+			margin-left:115px;
+		}
+		.p_3{
+			font-size:12px;
+			a{color:#045ac7;}
+		}
+		.submit_login{
+			display:block;
+			background: #9e1503;
+			width: 86px;
+			height: 30px;
+			text-align:center;
+			line-height:30px;
+			margin-left:169px;
+			margin-top:15px;
+			color:#ffffff;
+		}
+	}
+	.register{
+		font-size:12px;
+		width: 524px;
+		height: 600px;
+		border: 1px solid #cdcdcd;
+		float:right;
+		.email{
+			width: 169px;
+			height: 24px;
+			display: block;
+			margin-left: 176px;			
+		}
+		.register_password{
+			width: 169px;
+			height: 24px;
+			display:block;
+			margin-top:22px;
+			margin-left:176px;
+		}
+		i{
+			display:block;
+			width: 283px;
+			height: 40px;
+			line-height:40px;
+			color:#91343c;
+			margin:0 auto;
+		}
+		.password1{
+			width: 524px;
+			height: 24px;
+			.register_password1{
+				width: 169px;
+				height: 24px;
+				display:block;
+				margin-left:176px;
+				float:left;	
+			}
+			.register_checkbox{
+				float:left;
+				margin-top:7px;
+				width: 16px;
+				height:16px;
+				margin-left:16px;
+				margin-right:10px;
+			}
+			.p_3{
+				display:block;
+				width: 58px;
+				float:left;
+				height: 24px;
+				line-height:29px;
+			}
+		}
+		.phone{
+			width: 169px;
+			height: 24px;
+			display:block;
+			margin-left:176px;
+			margin-right:176px;	
+			margin-top:22px;			
+		}
+		.username{
+			width: 169px;
+			height: 24px;
+			display:block;
+			margin-left:176px;
+			margin-top:22px;
+			margin-bottom:22px;
+		}
+		.xb{margin-left: 197px;}
+		.kb{
+			display:inline-block;
+			margin-top: 32px;
+			margin-left: 178px;
+		}
+		.register_bottom{
+			margin-top:25px;
+			width: 523px;
+			height: 125px;
+			border-top:1px dashed #cdcdcd;
+			.register_checkbox1{
+				margin-left:165px;
+				margin-top:30px;
+			}
+			.submit_bd_register{
+				margin-top:25px;
+				.submit_bd{
+					display:block;
+					width: 86px;
+					height: 30px;
+					background:#9e1503;
+					line-height:30px;
+					text-align:center;
+					color:#ffffff;
+					float:left;
+					margin-left:174px;
+					margin-right:4px;
+				}
+				.submit_register{
+					display:block;
+					width: 86px;
+					height: 30px;
+					background:#9e1503;
+					line-height:30px;
+					text-align:center;
+					color:#ffffff;	
+					float:left;	
+					cursor: pointer;
+				}
+
+			}
+		}
+	}
+}
+
+.p_1{
+	text-align: center;
+	font-size: 16px;
+	height: 40px;
+	line-height: 63px;
+}
+.p_2{
+	height: 42px;
+	text-align:center;
+	line-height:42px;
+}

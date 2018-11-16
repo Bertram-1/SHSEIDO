@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>SHISEIDO资生堂</title>
+	<link rel="icon" href="/images/favicon.ico" type="image/x-icon" />
+	<link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon" />
+	<link rel="stylesheet" type="text/css" href="/css/cart.css">
+</head>
+<body>
+	<header></header>
+
+	<nav></nav>
+
+	<!-- 主体 -->
+	<div class="content">
+		<div class="wrap">
+			<ul class="cart_top">
+				<li><div class="flow" style="background: #ba2620">购物车</div></li>
+				<li><div class="flow">订单信息</div></li>
+				<li><div class="flow">确认及付款</div></li>
+				<li style="background: #ffffff"><div class="flow">完成</div></li>
+			</ul>
+			<div class="cart empty">购物车内没有商品</div>
+			<div class="add_cart not-empty ac">
+				<ul class="title">
+					<li class="pro_name">商品</li>
+					<li class="pro_change">操作</li>
+					<li class="pro_calculation">小计（元）</li>
+					<li class="pro_amount">数量</li>
+					<li class="pro_price">单价（元）</li>
+				</ul>
+
+				<ul class="add_cart_info">
+				<script type="text/html" id="add_cart_template">
+					{{each products item}}
+						<li class="cart_li">
+							<ul>
+								<li class="add_pro_checked"><input class="cart_checked" type="checkbox"></li>
+								<li class="add_pro_img" data="{{item.id}}"><img src="{{item.img}}"></li>
+								<li class="add_pro_name">{{item.name}}</li>
+								<li class="add_pro_price">{{item.price}}</li>
+								<li class="add_pro_amount">
+									<span class="decrement">-</span><input class="amount" type="text" value="{{item.amount}}"><span class="increment">+</span>
+								</li>
+								<li class="add_pro_calculation">{{item.price*item.amount}}</li>
+								<li class="pro_pro_change"><a class="del" href="javascript:;">删除</a></li>
+							</ul>
+
+
+						</li>	
+					{{/each}}
+				</script>
+				</ul>
+
+				<div class="cart_bottom2">
+					<input class="allchecked" type="checkbox" name="">全选
+					<span class="all">总价（免运费）：</span>
+					<span class="allprice">?</span>
+					<a class="settlement" href="javascript:;">去结算</a>
+					<a class="con_shop" href="http://localhost:2333/">继续购物</a>					
+				</div>
+			</div>
+			<div class="cart_bottom"></div>
+		</div>
+	</div>
+
+	<footer></footer>
+	<script type="text/javascript" src="/libs/require/require.js" data-main="/js/cart.js"></script>
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>登陆注册</title>
+	<link rel="icon" href="/images/favicon.ico" type="image/x-icon" />
+	<link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon" />
+	<link rel="stylesheet" type="text/css" href="/css/login_register.css">
+</head>
+<body>
+	<header></header>
+
+	<nav></nav>
+
+	<!-- 主体 -->
+	<ul class="offi_top">
+		<li><img src="/images/login_1.png"></li>
+		<li><img src="/images/login_2.png"></li>
+		<li><img src="/images/login_3.png"></li>
+		<li><img src="/images/login_4.png"></li>
+		<li style="margin-right: 0px"><img src="/images/login_5.png"></li>
+	</ul>
+	<div class="login_register">
+		<form class="login" name="login" action="">
+			<p class="p_1">已经是会员</p>
+			<p class="p_2">马上登陆获得更多会员咨询</p>
+			<input class="phone_email" type="text" name="" placeholder=" 手机号码/电子邮箱">
+			<input class="password" type="password" name="" placeholder=" 密码">
+			<a class="wj" href="javascript:;">忘记密码？</a>
+			<input class="checkbox" type="checkbox" name=""><span class="p_3">我已阅读并接受了<a href="javascript:;">隐私保护条款</a></span>
+			<input class="submit_login" type="submit" name="" value="登录" />
+		</form>
+		<form class="register" name="register" action="">
+			<p class="p_1">加入会员</p>
+			<p class="p_2">成为资生堂花庄会员，体验各种为您量身定做的奢侈礼遇</p>
+			<input class="email" type="text" name="" placeholder=" 邮箱">
+			<input class="register_password" type="password" name="" placeholder=" 密码">
+			<i>密码必须是6位以上字母和数字组成，可以包含符号</i>
+			<div class="password1">
+				<input class="register_password1" type="password" name="" placeholder=" 密码确认">
+				<!-- <input class="register_checkbox" type="checkbox" name=""> -->
+				<!-- <span class="p_3">显示密码</span> -->				
+			</div>
+			<input class="phone" type="text" name="" placeholder=" 手机">
+			<input class="username" type="text" name="" placeholder=" 姓名">
+			<span class="xb">性别：</span><input class="xb1" type="radio" name="xb">女性
+				 						 <input class="xb2" type="radio" name="xb">男性<br>
+			<span class="kb">电子快报：</span><input class="dy1" type="radio" name="kb">订阅
+					 <input class="dy2" type="radio" name="kb">不订阅<br>
+			<div class="register_bottom">
+				<input class="register_checkbox1" type="checkbox" name=""><span>我已阅读并接受了<a style="color: #045ac7" href="javascript:;">隐私保护条款</a></span>
+				<div class="submit_bd_register">
+					<a class="submit_bd" href="javascript:;">身份绑定</a>
+					<input class="submit_register" type="submit" name="" value="注册">
+				</div>
+			</div>
+		</form>	
+	</div>
+
+	<footer></footer>	
+
+	<script type="text/javascript" src="/libs/require/require.js" data-main="/js/register_login.js"></script>
+</body>
+</html>

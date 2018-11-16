@@ -1,0 +1,25 @@
+@import "component/reset.scss";
+@import "component/header.scss";
+@import "component/nav.scss";
+@import "component/footer.scss";
+@import "component/scrollbox.scss";
+
+.content{width: 100%;}
+.content .wrap{
+	width: 980px;margin: 0 auto;min-height: 389px;
+	.cart_top{
+		height: 40px;margin-top: 20px;
+		li{
+			width: 187px;height: 40px;float: left;
+			font-size: 13px;line-height: 40px;
+			background: url(/images/icon-10.jpg) no-repeat 168px center;
+			.flow{text-align:center;width: 164px;color: #ffffff;background:#a7a9ac;}
+		}
+	}
+	.cart{
+		width: 920px;height: 180px;border:1px solid #d5d5d5;
+		margin-top:35px;margin-bottom: 125px;
+		text-align:center;line-height:125px;font-size:28px;color:#a32838;
+	}
+	 .cart_bottom{height: 1px;border-top: 4px solid #ccc;}
+}

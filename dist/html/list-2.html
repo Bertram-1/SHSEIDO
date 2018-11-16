@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>SHISEIDO资生堂</title>
+	<link rel="icon" href="/images/favicon.ico" type="image/x-icon" />
+	<link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon" />
+	<link rel="stylesheet" type="text/css" href="/css/list-2.css">
+</head>
+<body>
+	<header></header>
+
+	<nav></nav>
+
+	<!-- 主体 -->
+	<div class="main_top">
+		<div class="wrap">
+			<div class="friendlink">
+				<a href="javascript:;">首页</a>>><a href="javascript:;">护肤</a>
+			</div>
+			<h3>护肤</h3>
+		</div>
+	</div>	
+	<div class="main_bottom">
+		<div class="wrap">
+			<div class="item l_asideMenu">
+			    <ul class="setupMenu">
+			        <li><a class="lisA" href="javascript:;" style="color:#737373;background: url(../images/l_right.jpg) no-repeat 113px 14px">按种类</a>
+			            <ul class="subMenu hide">
+			                <li><a href="#">卸妆清洁</a></li>
+			                <li><a href="#">爽肤水</a></li>
+			                <li><a href="#">精华</a></li>
+			                <li><a href="#">乳液</a></li>
+			                <li><a href="#">面霜</a></li>
+							<li><a href="">眼唇护理</a></li>
+							<li><a href="">面膜</a></li>
+							<li><a href="">护肤套餐</a></li>
+			            </ul>
+			        </li>
+			        <li><a class="lisB" href="javascript:;" style="color:#737373;background: url(../images/l_right.jpg) no-repeat 113px 14px">按系列</a>
+			            <ul class="subMenu hide">
+			                <li><a href="#">鲜润赋活系列</a></li>
+			                <li><a href="#">红妍肌活精华系列</a></li>
+			                <li><a href="#">时光琉璃御藏系列</a></li>
+			                <li><a href="#">悦薇珀翡系列</a></li>
+			                <li><a href="#">盼丽风姿系列</a></li>
+			                <li><a href="#">新透白美肌</a></li>
+			                <li><a href="#">青春日和系列</a></li>
+			                <li><a href="#">百优系列</a></li>
+			                <li><a href="#">红色蜜露</a></li>
+			                <li><a href="#">亲肤系列</a></li>
+			            </ul>
+			        </li>
+			        <li><a class="lisC" href="javascript:;" style="color:#737373;background: url(../images/l_right.jpg) no-repeat 113px 14px">按关心问题</a>
+			            <ul class="subMenu hide">
+			                <li><a href="#">干燥·缺水</a></li>
+			                <li><a href="#">色斑·暗沉</a></li>
+			                <li><a href="#">轻熟肌 弹性流失</a></li>
+			                <li><a href="#">熟龄肌  深度老化</a></li>
+			                <li><a href="#">毛孔粗大</a></li>
+			                <li><a href="#">眼周松弛</a></li>
+			            </ul>
+			        </li>      
+			    </ul>
+			</div>
+			<div class="main_right">
+				<div class="main_tb">
+					<p>产品总数 : <span id="num"> </span></p>
+					<div class="sort">
+						<a class="px" href="javascript:;">排序</a>
+						<ul id="hidden_box">
+							<li><a href="">价格从低到高</a></li>
+							<li><a href="">价格从高到低</a></li>
+							<li><a href="">销量从低到高</a></li>
+							<li><a href="">销量从高到低</a></li>
+						</ul>
+					</div>					
+				</div>
+				<ul class="main_content">
+					<script type="text/html" id="pro-template">
+					{{each products item i}}
+					<li class="addcart">
+						<img class="product_img" src="{{item.img}}">
+						<p class="product_name" id="{{item.id}}">{{ item.name }}</p>
+						<i>{{ item.capacity }}mL</i>
+						<em>￥<span class="product_price1">{{ item.price }}</span></em>
+						<a href="" class="gwc add">加入购物车</a>
+						<a href="http://localhost:2333/html/detail.html?id={{item.id}}" class="xq">详情</a>
+					</li>
+					{{/each}} 
+					</script>
+				</ul>
+				<div class="main_tb"></div>
+			</div>
+		</div>		
+	</div>
+	
+	<footer></footer>
+
+	<script type="text/javascript" src="/libs/require/require.js" data-main="/js/list-2.js"></script>
+</body>
+</html>

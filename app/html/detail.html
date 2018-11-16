@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>SHISEIDO资生堂</title>
+	<link rel="icon" href="/images/favicon.ico" type="image/x-icon" />
+	<link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon" />
+	<link rel="stylesheet" type="text/css" href="/css/detail.css">
+</head>
+<body>
+	<header></header>
+
+	<nav></nav>
+
+	<!-- <div id="detail" style="width: 100px;height: 100px;background: red"></div>
+	<script type="text/html" id="detil-template">
+		<h3>{{product.name}}</h3>
+		<p>{{product.price}}</p>
+		<img src="{{product.img}}">
+	</script> -->
+	<!-- 主体 -->
+	<div class="main">
+		<div class="wrap">
+			<div class="item l_asideMenu">
+			    <ul class="setupMenu">
+			        <li><a class="lisA" href="javascript:;" style="color:#737373;background: url(../images/l_right.jpg) no-repeat 113px 14px">按种类</a>
+			            <ul class="subMenu hide">
+			                <li><a href="#">卸妆清洁</a></li>
+			                <li><a href="#">爽肤水</a></li>
+			                <li><a href="#">精华</a></li>
+			                <li><a href="#">乳液</a></li>
+			                <li><a href="#">面霜</a></li>
+							<li><a href="">眼唇护理</a></li>
+							<li><a href="">面膜</a></li>
+							<li><a href="">护肤套餐</a></li>
+			            </ul>
+			        </li>
+			        <li><a class="lisB" href="javascript:;" style="color:#737373;background: url(../images/l_right.jpg) no-repeat 113px 14px">按系列</a>
+			            <ul class="subMenu hide">
+			                <li><a  href="#">鲜润赋活系列</a></li>
+			                <li><a href="#">红妍肌活精华系列</a></li>
+			                <li><a href="#">时光琉璃御藏系列</a></li>
+			                <li><a href="#">悦薇珀翡系列</a></li>
+			                <li><a href="#">盼丽风姿系列</a></li>
+			                <li><a href="#">新透白美肌</a></li>
+			                <li><a href="#">青春日和系列</a></li>
+			                <li><a href="#">百优系列</a></li>
+			                <li><a href="#">红色蜜露</a></li>
+			                <li><a href="#">亲肤系列</a></li>
+			            </ul>
+			        </li>
+			        <li><a class="lisC" href="javascript:;" style="color:#737373;background: url(../images/l_right.jpg) no-repeat 113px 14px">按关心问题</a>
+			            <ul class="subMenu hide">
+			                <li><a href="#">干燥·缺水</a></li>
+			                <li><a href="#">色斑·暗沉</a></li>
+			                <li><a href="#">轻熟肌 弹性流失</a></li>
+			                <li><a href="#">熟龄肌  深度老化</a></li>
+			                <li><a href="#">毛孔粗大</a></li>
+			                <li><a href="#">眼周松弛</a></li>
+			            </ul>
+			        </li>      
+			    </ul>
+			</div>
+			<div class="mianright">
+				<div class="mainright_top">
+				<script type="text/html" id="detail-template">
+					<div class="mainright_l">
+						<img class="product_img" src="{{product.src}}">
+					</div>
+					<div class="mainright_r">
+						<div class="product_name">{{product.name}}<a href="javascript:;"><img src="/images/share.jpg"></a></div>
+						<div class="product_capacity">{{product.capacity}}</div>
+						<div class="product_introduce">
+							<p class="xq"><b>详情：</b>慕斯质地，一抹顺滑延展，肌肤展现水润</p>
+							<p class="gx1"><b>功效 : </b>明日叶：有效抑制自由基侵害，加速肌肤内循环及肌肤净化，卓效改善暗沉、焕亮肤色；延缓衰老，促进肌肤自我修护力。</p>
+							<p class="gx2">柑橘精华：帮助肌肤产生透明质酸，修护肌肤锁水屏障，为肌肤补水同时帮助紧紧抓水。</p>
+							<p class="syff"><b>使用方法：</b>每天早晚在化妆水、精华之后使用。取适量在指尖上，点于脸颊，额头，鼻尖和下巴上。由面颊为中心向外打圈按摩。</p>
+						</div>
+						<div class="product_price">价格：<span>￥<span class="product_price1">{{product.price}}</span></span></div>
+						<div class="product_btn">
+							<a class="add" href="javascript:;">加入购物车</a>
+							<a class="buy" href="http://localhost:2333/html/cart.html">立即购买</a>
+							<a class="collect" href="">加入收藏</a>
+						</div>
+					</div>
+				</script>
+				</div>
+
+				<div class="mainright_middle">
+					<div class="middle_l middle">官方正品保证</div>
+					<div class="middle_c middle">全场免运费</div>
+					<div class="middle_r middle">支付保障</div>
+				</div>
+				<div class="mainright_bottom">
+					<h3>相关商品推荐</h3>
+					<ul id="r-recommend">
+						<script type="text/html" id="pro-recommend">
+						{{each recommend item i}}
+						<li> 
+							<img src="{{item.img}}">
+							<p class="pro_name">{{ item.name }}</p>
+							<p class="pro_capacity">{{ item.capacity }}mL</p>
+							<p class="pro_price">￥{{ item.price }}</p>
+							<a class="gwc" href="javascript:;">加入购物车</a>
+						</li>
+						{{/each}} 
+						</script>
+
+					</ul>
+				</div>
+			
+			</div>			
+		</div>
+	</div>
+
+	<footer></footer>
+
+<script type="text/javascript" src="/libs/require/require.js" data-main="/js/detail.js"></script>
+</body>
+</html>
