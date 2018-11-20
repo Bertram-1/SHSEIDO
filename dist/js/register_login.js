@@ -26,10 +26,10 @@ require(["config"], function () {
       var arr = [true, true, true, true, true, true, true];
 
       if (!emailstr.test(email)) {
-        alert("请填写电子邮箱");
+        alert("请正确填写电子邮箱");
         arr[0] = false;
       } else if (!passwordstr.test(password)) {
-        alert("请填写密码，6-20个字符");
+        alert("请正确填写密码，6-20个字符");
         arr[1] = false;
       } else if (password1 !== password) {
         alert("请再次输入相同的密码");
@@ -66,11 +66,11 @@ require(["config"], function () {
           success: function success(res) {
             if (res.code === 1) {
               alert("注册成功");
-              $.cookie();
               window.location.href = "http://localhost:2333/html/login_register.html";
               e.preventDefault();
             } else {
-              alert("注册失败，请重试");
+              alert("该邮箱或手机号已被注册，请重新输入");
+              e.preventDefault();
             }
           }
         });

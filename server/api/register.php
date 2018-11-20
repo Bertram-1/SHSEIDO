@@ -4,15 +4,16 @@
 	$phone = $_POST["phone"];
 	$password = $_POST["password"];
 	$email = $_POST["email"];
-	$sql  ="insert into user (phone, password,email) values ('$phone','$password','$email')";
-	
-	$isSucc = mysql_query($sql);
+	$sql1 = "select * from user where email='$email' or phone='$phone'";
+	$isSuc = mysql_query($sql1);
+	$row = mysql_num_rows($isSuc);
 
-	if ($isSucc) {
-		echo '{"code" : 1}';
-	}else{
+	if($row>0){
 		echo '{"code" : 0}';
+	}else{
+		$sql  ="insert into user (phone, password,email) values ('$phone','$password','$email')";
+		$isSucc = mysql_query($sql);
+		echo '{"code" : 1}';
 	}
-
 	mysql_close();
 ?>

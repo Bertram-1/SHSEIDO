@@ -69,8 +69,8 @@
 					<div class="sort">
 						<a class="px" href="javascript:;">排序</a>
 						<ul id="hidden_box">
-							<li><a href="">价格从低到高</a></li>
-							<li><a href="">价格从高到低</a></li>
+							<li class="sx"><a href="javascript:;">价格从低到高</a></li>
+							<li class="jx"><a href="javascript:;">价格从高到低</a></li>
 							<li><a href="">销量从低到高</a></li>
 							<li><a href="">销量从高到低</a></li>
 						</ul>
@@ -78,7 +78,7 @@
 				</div>
 				<ul class="main_content">
 					<script type="text/html" id="pro-template">
-					{{each products item i}}
+					{{each data item i}}
 					<li class="addcart">
 						<img class="product_img" src="{{item.img}}">
 						<p class="product_name" id="{{item.id}}">{{ item.name }}</p>
